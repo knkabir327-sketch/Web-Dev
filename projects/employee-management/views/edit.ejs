@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Employee</title>
+</head>
+<body>
+
+<h1>Edit Employee</h1>
+
+<form action="/employees/<%= employee._id %>?_method=PUT" method="POST">
+
+    <input type="text" name="name" value="<%= employee.name %>">
+    <br><br>
+
+    <input type="email" name="email" value="<%= employee.email %>">
+    <br><br>
+
+    <input type="text" name="department" value="<%= employee.department %>">
+    <br><br>
+
+    <input type="number" name="salary" value="<%= employee.salary %>">
+    <br><br>
+
+    <input type="number" name="experience" value="<%= employee.experience %>">
+    <br><br>
+
+    <button>Update Employee</button>
+
+    
+
+</form>
+
+</body>
+</html>
