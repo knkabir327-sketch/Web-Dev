@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.student{
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.student h3{
+    margin-top: 0;
+}
+
+.student p{
+    margin: 8px 0;
+}
+
+.student-form{
+    width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+input{
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: green;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+.delete{
+    background-color: red;
+}
+
+.delete:hover{
+    background-color: darkred;
+}
+
+.delete-form{
+    margin-top: 10px;
+}
+
+.edit-link{
+    display: inline-block;
+    margin-top: 10px;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.edit-link:hover{
+    text-decoration: underline;
+}
+
+.add-btn{
+    display: block;
+    width: fit-content;
+    margin: 0 auto 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.add-btn:hover{
+    background-color: darkgreen;
+}
+
+hr{
+    margin-top: 20px;
+}
