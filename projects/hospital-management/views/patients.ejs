@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients</title>
+</head>
+<body>
+    <h1>All Patients</h1>
+    <a href="/patients/new">Add Patients</a>
+    <% patients.forEach(patient=>{%>
+        <h3><%= patient.patientName%></h3>
+
+        <p>patient:<%= patient.patientName %></p>
+        <p>Age: <%= patient.age %></p>
+        <p>Disease <%= patient.disease %></p>
+        <p>Doctor: <%= patient.doctorName%></p>
+        <p>Fees: <%= patient.fees %></p>
+
+        <a href="/patients/<%= patient._id %>/edit">Edit</a>
+        <form action="/patients/<%= patient._id%>?_method=DELETE" method="POST">
+            <button>Delete</button>
+        </form>
+        <hr>
+
+   <% }) %>
+</body>
+</html>
