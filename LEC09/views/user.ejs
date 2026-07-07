@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User's Registration Form</h1>
+
+    <h2>Name: <%= student.name %> </h2>
+
+    <% if(student.age>=18){ %>
+        <h1>Can Vote</h1>
+    <% }
+    else { %>
+        <h1>Can't vote</h1>
+    <%} %>
+</body>
+</html>
