@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employees</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>All Employees</h1>
+
+<% for(let emp of employees){ %>
+
+    <h2><%= emp.name %></h2>
+
+    <p>Email: <%= emp.email %></p>
+
+    <p>Department: <%= emp.department %></p>
+
+    <p>Salary: ₹<%= emp.salary %></p>
+
+    <p>Experience: <%= emp.experience %> years</p>
+
+    <a href="/employees/<%= emp._id %>/edit">Edit</a>
+
+    <form action="/employees/<%= emp._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete</button>
+    </form>
+
+    <form action="/employees/search" method="GET">
+    <input type="text"
+           name="department"
+           placeholder="Enter Department">
+    </form>
+
+    <hr>
+
+<% } %>
+
+</body>
+</html>

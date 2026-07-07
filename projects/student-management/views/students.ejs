@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- this page will display all students -->
+
+    <h1>All Students</h1>
+    <a href="/students/new" class="add-btn">Add Student</a>
+
+    <div class="student">
+
+    <% students.forEach(student =>{ %>
+        <div class="student">
+        <h3><%= student.name %></h3>
+        <p>Age: <%= student.age %></p>
+        <p>Course: <%= student.course%></p>
+        <p>Email: <%= student.email %></p>
+        <p>City: <%= student.city%></p>
+
+        <a href="/students/<%= student._id %>/edit">Edit</a>
+        <form action="/students/<%= student._id%>?_method=DELETE" method="POST">
+            <button>Delete</button>
+        </form>
+        </div>
+        <hr>
+    </div>
+    <% }) %>
+</body>
+</html>

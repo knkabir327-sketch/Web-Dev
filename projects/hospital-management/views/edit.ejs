@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Patient</title>
+</head>
+<body>
+    <form action="/patients/<%= patient._id%>?_method=PUT" method="POST">
+        <input type="text" name="patientName" value="<%= patient.patientName%>">
+        <br><br>
+
+<input type="number" name="age" value="<%= patient.age %>">
+<br><br>
+
+<input type="text" name="disease" value="<%= patient.disease %>">
+<br><br>
+
+<input type="text" name="doctorName" value="<%= patient.doctorName %>">
+<br><br>
+
+<input type="number" name="fees" value="<%= patient.fees %>">
+<br><br>
+
+<button>Update Patient</button>
+
+    </form>
+</body>
+</html>
